@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-vehicle",
+      "2": "I-vehicle",
+      "3": "L-vehicle",
+      "4": "U-vehicle",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-vehicle": 1,
+      "I-vehicle": 2,
+      "L-vehicle": 3,
+      "U-vehicle": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

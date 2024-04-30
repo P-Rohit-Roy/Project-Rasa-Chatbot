@@ -1,0 +1,67 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - lakelocation
+  - shoppingmall
+  - ambulance
+  - order_vehicle
+  - select_vehicle
+  - confirm_vehicle
+  - wait
+
+entities:
+  - vehicle
+
+responses:
+  utter_greet:
+  - text: "Hey! what's up?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up mate:"
+    image: "What do you call a couple of chimpanzees sharing an Amazon account? PRIME-mates."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye Bye"
+
+  utter_iamabot:
+  - text: "I am a chatbot, powered by Rohit Roy Padatala."
+
+  utter_thanks:
+  - text: "See you later,Thank You"
+
+  utter_lakelocation:
+    - text: "Go to Complex and take the side route to reach your destination"
+
+  utter_shoppingmall:
+    - text: "CMR shoppingmall locates near east side of beach road 500 meters from your current location"
+
+  utter_ambulance:
+    - text: "Calling 108 for emergency sevices, In the mean time take the required precautions"
+
+  utter_wait:
+    - text: "Please Let me know your concern"
+
+
+actions:
+  - action_order_vehicle
+  - action_select_vehicle
+  - action_confirm_vehicle
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

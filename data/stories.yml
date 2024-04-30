@@ -1,0 +1,64 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: saying thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- story: lake route
+  steps:
+    - intent: lakelocation
+    - action: utter_lakelocation
+
+- story: mall route
+  steps:
+    - intent: shoppingmall
+    - action: utter_shoppingmall
+
+- story: emergency service
+  steps:
+    - intent: ambulance
+    - action: utter_ambulance
+
+- story: waiting
+  steps:
+    - intent: wait
+    - action: utter_wait
+
+- story: Vehicle services
+  steps:
+    - intent: order_vehicle
+    - action: action_select_vehicle
+    - intent: select_vehicle
+    - action: action_select_vehicle
+    - intent: confirm_vehicle
+    - action: action_confirm_vehicle
