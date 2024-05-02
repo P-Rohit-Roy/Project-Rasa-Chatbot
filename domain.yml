@@ -12,7 +12,7 @@ intents:
   - lakelocation
   - shoppingmall
   - ambulance
-  - order_vehicle
+  - book_vehicle
   - select_vehicle
   - confirm_vehicle
   - wait
