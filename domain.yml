@@ -55,6 +55,16 @@ responses:
   utter_wait:
     - text: "Please Let me know your concern"
 
+  utter_book:
+    - text: "select the vehicle"
+
+  utter_select:
+    - text: "confirm vehicle"
+
+  utter_done:
+    - text: "you have successfully booked the vehicle"
+
+
 
 actions:
   - action_order_vehicle
