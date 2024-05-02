@@ -56,9 +56,9 @@ stories:
 
 - story: Vehicle services
   steps:
-    - intent: order_vehicle
-    - action: action_select_vehicle
     - intent: select_vehicle
-    - action: action_select_vehicle
+    - action: utter_select
+    - intent: book_vehicle
+    - action: utter_book
     - intent: confirm_vehicle
-    - action: action_confirm_vehicle
+    - action: utter_done
