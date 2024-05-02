@@ -121,7 +121,7 @@ nlu:
     - assist 
     - urgent
 
-- intent: order_vehicle
+- intent: book_vehicle
   examples: |
     - i want to book a [car](vehicle) to pick me up
     - can i book a [car](vehicle)
